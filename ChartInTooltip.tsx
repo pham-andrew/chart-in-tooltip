@@ -33,7 +33,7 @@ export const ChartInTooltip = () => {
                     Y LABEL
                 </Typography>
                 <Box sx={{ minWidth: 250 }}>
-                    <Chart data={data}>
+                    <Chart data={data} sx={{ maxHeight: 200 }}>
                         <ArgumentAxis />
                         <ValueAxis />
                         <ScatterSeries valueField="y" argumentField="x" />
